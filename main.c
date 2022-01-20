@@ -6,11 +6,12 @@ int main() {
     int random_number = srand(time(NULL)) / 10000;
 
     // opening message
-    printf("You will guess a number. Good luck. %d");
+    printf("You will guess a number. Good luck.\n");
 
-    // store our guess
-    int guess = 0;
-    while (guess != random_number) {
+    while (1) {
+        // store our guess
+        int guess = 0;
+
         // tell them to input a number
         printf("Guess number: ");
         scanf("%d", &guess);
